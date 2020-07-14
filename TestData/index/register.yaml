@@ -1,0 +1,43 @@
+-
+  id: test_register001.1
+  detail : 手机号,密码,验证码为空登录
+  screenshot : phone_pawd_code_empty
+  data:
+    phone: ""
+    code: ""
+    password: ""
+    confirmpassword: ""
+  check :
+     - 请输入手机号码！
+     - 请输入手机验证码！
+     - 请输入密码！
+     - 请再次输入密码！
+-
+  id: test_register001.2
+  detail : 手机号为空登录
+  screenshot : phone_empty
+  data :
+    phone: ""
+    code: ""
+    password: "aaa"
+    confirmpassword: "aaa"
+  check :
+    - 请输入手机号码！
+    - ""
+    - 密码必须为6~16位字符！
+    - ""
+-
+  id: test_register001.3
+  detail : 密码为空登录
+  screenshot : pawd_empty
+  data :
+    phone : 11111112
+    code: 8878
+    password: ""
+    confirmpassword: "aaa"
+  check :
+    - 请输入正确的手机号码！
+    - ""
+    - 请输入密码！
+    - 与第一次输入的密码不一致！
+

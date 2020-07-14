@@ -1,0 +1,11 @@
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+DROP TABLE IF EXISTS `test`;
+CREATE TABLE `test`  (
+  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `age` int(11) NULL DEFAULT NULL
+) ENGINE = MyISAM CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+INSERT INTO `test` VALUES ('zsd', 1);
+INSERT INTO `test` VALUES ('顺德区', 2);
+
+SET FOREIGN_KEY_CHECKS = 1;

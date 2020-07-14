@@ -1,0 +1,8 @@
+.idea
+*py[cod]
+driver/chromedriver.exe
+Test
+logs/2020*
+report/html
+report/xlsx
+venv
